@@ -5,29 +5,44 @@ body, html {
     padding: 0;
     font-family: "Roboto" "Ramaraja";
 }
+
+.wrapper {
+    margin: 0 auto;
+    width: 1350px;
+}
 p {
     margin: 0;
 }
+
 /* navigation-styles */
 a {
     color: black;
     text-decoration: none;
+    transition-duration: 0.4s;
 }
 
 a:hover {
-    
-    color: #A3DC00;
+
+    color: #A3DC00; 
 }
 
 a:active {
-    color: black;
+    color: #1B0A42;
+    background-color: #A3DC00;
     
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
 
 .logotype{
     height: 40.61px;
     width: 90.25px;
-    float: left;
     margin-top: 37px;
     margin-left: 100px;
 }
@@ -38,14 +53,21 @@ a:active {
     font-size: 16px;
     line-height: 24px;
     color: #1B0A42;
-    float: left;
-    margin-left: 97.5px;
+    margin-left: -300px;
     margin-top: 30px;
 }
 
+.top_menu {
+    display: flex;
+    list-style-type: none;
+}
+
 .top_menu li {
-    display: inline;
-    margin-right: 38px;
+    margin-right: 48px;;
+}
+
+.top_menu :last-child {
+    margin-right: 0px;
 }
 
 .registration {
@@ -56,12 +78,12 @@ a:active {
     line-height: 24px;
     color: #1B0A42;
     margin-top:30px;
-    float: right;
     margin-right: 80px;
 }
 
-.sign_menu li {
-    display: inline;
+.sign_menu {
+    display: flex;
+    list-style-type: none;
 }
 
 .sign_up {
@@ -75,6 +97,7 @@ a:active {
 
 .sign_up:hover {
     color: black;
+    background-color: rgb(190, 0, 133);
 }
 
 .sign_in {
@@ -86,12 +109,14 @@ a:active {
 /* main-styles */
 
 main {
+    display: flex;
+    justify-content: space-between;
     
 }
 
 .main_left_column {
     width: 600px;
-    float: left;
+    /* float: left; */
     margin-top: 150px;
     margin-left: 100px;
 }
@@ -111,6 +136,8 @@ main {
 
 .btn:hover {
     color: black;
+    background-color: rgb(190, 0, 133);
+    transition-duration: 0.7s;
 }
 
 #productive {
@@ -138,8 +165,7 @@ main {
 
 .frame {
     margin-top: 72px;
-    margin-right: 100px;
-    float: right;
+    /* float: right; */
     width: 530px;
     height: 430px;
 }
